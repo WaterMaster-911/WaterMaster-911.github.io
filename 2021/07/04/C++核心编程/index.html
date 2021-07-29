@@ -7,14 +7,29 @@
   
   
   
-  <title>WaterMaster&#39;s blog</title>
+  <title>C++核心编程 | WaterMaster&#39;s blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="WaterMaster&#39;s blog">
-<meta property="og:url" content="http://watermaster-911.github.io/index.html">
+  <meta name="description" content="本阶段主要针对C++&#x3D;&#x3D;面向对象&#x3D;&#x3D;编程技术做详细讲解，探讨C++中的核心和精髓。 1 内存分区模型C++程序在执行时，将内存大方向划分为4个区域  代码区：存放函数体的二进制代码，由操作系统进行管理的 全局区：存放全局变量和静态变量以及常量 栈区：由编译器自动分配释放, 存放函数的参数值,局部变量等 堆区：由程序员分配和释放,若程序员不释放,程序结束时由操作系统回收  内存四区意义： 不同区域存">
+<meta property="og:type" content="article">
+<meta property="og:title" content="C++核心编程">
+<meta property="og:url" content="http://watermaster-911.github.io/2021/07/04/C++%E6%A0%B8%E5%BF%83%E7%BC%96%E7%A8%8B/index.html">
 <meta property="og:site_name" content="WaterMaster&#39;s blog">
+<meta property="og:description" content="本阶段主要针对C++&#x3D;&#x3D;面向对象&#x3D;&#x3D;编程技术做详细讲解，探讨C++中的核心和精髓。 1 内存分区模型C++程序在执行时，将内存大方向划分为4个区域  代码区：存放函数体的二进制代码，由操作系统进行管理的 全局区：存放全局变量和静态变量以及常量 栈区：由编译器自动分配释放, 存放函数的参数值,局部变量等 堆区：由程序员分配和释放,若程序员不释放,程序结束时由操作系统回收  内存四区意义： 不同区域存">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://watermaster-911.github.io/2021/07/04/C++%E6%A0%B8%E5%BF%83%E7%BC%96%E7%A8%8B/assets/1545017602518.png">
+<meta property="og:image" content="http://watermaster-911.github.io/2021/07/04/C++%E6%A0%B8%E5%BF%83%E7%BC%96%E7%A8%8B/assets/1545533548532.png">
+<meta property="og:image" content="http://watermaster-911.github.io/2021/07/04/C++%E6%A0%B8%E5%BF%83%E7%BC%96%E7%A8%8B/assets/1545533829184.png">
+<meta property="og:image" content="http://watermaster-911.github.io/2021/07/04/C++%E6%A0%B8%E5%BF%83%E7%BC%96%E7%A8%8B/assets/1544861202252.png">
+<meta property="og:image" content="http://watermaster-911.github.io/2021/07/04/C++%E6%A0%B8%E5%BF%83%E7%BC%96%E7%A8%8B/assets/clip_image002.png">
+<meta property="og:image" content="http://watermaster-911.github.io/2021/07/04/C++%E6%A0%B8%E5%BF%83%E7%BC%96%E7%A8%8B/assets/1545881904150.png">
+<meta property="og:image" content="http://watermaster-911.github.io/2021/07/04/C++%E6%A0%B8%E5%BF%83%E7%BC%96%E7%A8%8B/assets/1545882158050.png">
+<meta property="og:image" content="http://watermaster-911.github.io/2021/07/04/C++%E6%A0%B8%E5%BF%83%E7%BC%96%E7%A8%8B/assets/clip_image002.jpg">
+<meta property="og:image" content="http://watermaster-911.github.io/2021/07/04/C++%E6%A0%B8%E5%BF%83%E7%BC%96%E7%A8%8B/assets/1545985945198.png">
+<meta property="article:published_time" content="2021-07-04T15:45:55.911Z">
+<meta property="article:modified_time" content="2021-07-29T08:23:39.254Z">
+<meta property="article:tag" content="C++学习">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://watermaster-911.github.io/2021/07/04/C++%E6%A0%B8%E5%BF%83%E7%BC%96%E7%A8%8B/assets/1545017602518.png">
   
     <link rel="alternative" href="/atom.xml" title="WaterMaster&#39;s blog" type="application/atom+xml">
   
@@ -28,9 +43,6 @@
   <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   
-    
-    
-  
   
       <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
   
@@ -41,8 +53,8 @@
       var yiliaConfig = {
           fancybox: true,
           animate: false,
-          isHome: true,
-          isPost: false,
+          isHome: false,
+          isPost: true,
           isArchive: false,
           isTag: false,
           isCategory: false,
@@ -155,169 +167,7 @@
         </header>
     </div>
 </nav>
-      <div class="body-wrap">
-  
-    <article id="post-上海大学常用网址" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a  href="/2021/07/29/%E4%B8%8A%E6%B5%B7%E5%A4%A7%E5%AD%A6%E5%B8%B8%E7%94%A8%E7%BD%91%E5%9D%80/" class="article-date">
-      <time datetime="2021-07-28T16:36:07.989Z" itemprop="datePublished">2021-07-29</time>
-</a>
-
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a  class="article-title" href="/2021/07/29/%E4%B8%8A%E6%B5%B7%E5%A4%A7%E5%AD%A6%E5%B8%B8%E7%94%A8%E7%BD%91%E5%9D%80/">SHU常用网址及功能描述</a>
-    </h1>
-  
-
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-        <p>上海大学官网</p>
-<p><a target="_blank" rel="noopener" href="https://www.shu.edu.cn/">https://www.shu.edu.cn/</a></p>
-<p>上海大学一网通办</p>
-<p><a target="_blank" rel="noopener" href="https://eportalmobile.shu.edu.cn/#/">https://eportalmobile.shu.edu.cn/#/</a><br><em>一个网站通办所有事项</em></p>
-<h1 id="网络"><a href="#网络" class="headerlink" title="网络"></a>网络</h1><p>上海大学校园网使用说明<br><a target="_blank" rel="noopener" href="https://wlan.shu.edu.cn/index/wxwlsysm/Shu_ForAll_.htm">https://wlan.shu.edu.cn/index/wxwlsysm/Shu_ForAll_.htm</a><br><em>教你如何接入校园网</em></p>
-<p>上海大学vpn使用说明<br><a target="_blank" rel="noopener" href="https://vpn.shu.edu.cn/">https://vpn.shu.edu.cn/</a><br><em>未接入校园网下，访问学校内网的方法</em></p>
-<h1 id="信息"><a href="#信息" class="headerlink" title="信息"></a>信息</h1><p>企业微信上海大学定制版<br><a target="_blank" rel="noopener" href="https://eportal.shu.edu.cn/weixin/">https://eportal.shu.edu.cn/weixin/</a><br><em>特别注意，这是定制版本安装包，企业微信官网的安装包不能使用上海大学学号登陆的</em></p>
-<p>上海大学邮箱申请<br><a target="_blank" rel="noopener" href="https://newsso.shu.edu.cn/email">https://newsso.shu.edu.cn/email</a><br><em>申请上海大学shu.edu.cn域名邮箱</em></p>
-<p>上海大学电子邮件系统<br><a target="_blank" rel="noopener" href="https://oa.shu.edu.cn/">https://oa.shu.edu.cn/</a><br><em>上海大学邮箱登陆主页</em></p>
-<p>上海大学学生工作办公室<br><a target="_blank" rel="noopener" href="https://xgb.shu.edu.cn/">https://xgb.shu.edu.cn/</a><br><em>一些学生工作信息、通知通告发布的地方</em></p>
-<p>熟知网<br><a target="_blank" rel="noopener" href="http://www.sz.shu.edu.cn/">http://www.sz.shu.edu.cn</a><br><em>各种活动、组织信息，个人信息电子档案以及在校`事务信息。</em></p>
-<h1 id="学习"><a href="#学习" class="headerlink" title="学习"></a>学习</h1><p>上海大学教务部<br><a target="_blank" rel="noopener" href="https://www.jwc.shu.edu.cn/">https://www.jwc.shu.edu.cn/</a><br><em>选课、查询课表、查询成绩等都是在这里</em></p>
-<p>上海大学网络教学平台<br><a target="_blank" rel="noopener" href="http://www.elearning.shu.edu.cn/portal">http://www.elearning.shu.edu.cn/portal</a><br><em>超星平台网页版本，任课老师一般会将课程资料放到学习空间里，也会在此发布作业和通知。</em></p>
-<p>上海大学图书馆<br><a target="_blank" rel="noopener" href="https://lib.shu.edu.cn/">https://lib.shu.edu.cn/</a><br><em>图书检索、常用数据库访问链接，图书馆通知等</em></p>
-<p>教室使用情况查询<br><a target="_blank" rel="noopener" href="https://cj.shu.edu.cn/RoomUse/RoomUseDate">https://cj.shu.edu.cn/RoomUse/RoomUseDate</a><br><em>可以查询当日各时段的空教室</em></p>
-<h1 id="健康"><a href="#健康" class="headerlink" title="健康"></a>健康</h1><p>课外活动次数查询<br>登陆<br><a target="_blank" rel="noopener" href="http://202.120.127.149:8989/spims/login/index.jsp">http://202.120.127.149:8989/spims/login/index.jsp</a><br>查询<br><a target="_blank" rel="noopener" href="http://202.120.127.149:8989/spims/exercise.do?method=seacheload">http://202.120.127.149:8989/spims/exercise.do?method=seacheload</a><br><em>课外打卡是体育课程成绩考核的一部分，这里查询你的课外打卡次数，先在第一个网址使用学号登陆，在进入第二个网址进行查询。</em></p>
-<p>心理辅导中心<br><a target="_blank" rel="noopener" href="https://xlfd.shu.edu.cn/index.htm">https://xlfd.shu.edu.cn/index.htm</a></p>
-
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-    <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/%E5%AF%BC%E7%94%9F%E5%B7%A5%E4%BD%9C/">导生工作</a>
-    </div>
-
-
-      
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%BD%91%E5%9D%80%E6%95%B4%E7%90%86/" rel="tag">网址整理</a></li></ul>
-    </div>
-
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-大一年级资料整理" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a  href="/2021/07/29/%E5%A4%A7%E4%B8%80%E5%B9%B4%E7%BA%A7%E8%B5%84%E6%96%99%E6%95%B4%E7%90%86/" class="article-date">
-      <time datetime="2021-07-28T16:36:07.987Z" itemprop="datePublished">2021-07-29</time>
-</a>
-
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a  class="article-title" href="/2021/07/29/%E5%A4%A7%E4%B8%80%E5%B9%B4%E7%BA%A7%E8%B5%84%E6%96%99%E6%95%B4%E7%90%86/">大一学科资料整理</a>
-    </h1>
-  
-
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-        <p>公共基础课</p>
-<h2 id="微积分"><a href="#微积分" class="headerlink" title="微积分"></a>微积分</h2><h3 id="课本"><a href="#课本" class="headerlink" title="课本"></a>课本</h3><p>高等数学（上海大学出版社)</p>
-<h3 id="课件"><a href="#课件" class="headerlink" title="课件"></a>课件</h3><p>王玉超PPT</p>
-<h3 id="历年试卷"><a href="#历年试卷" class="headerlink" title="历年试卷"></a>历年试卷</h3><p>秋季期末试卷<br>冬季期末试卷<br>春季期末试卷</p>
-<h2 id="程序设计-c语言"><a href="#程序设计-c语言" class="headerlink" title="程序设计(c语言)"></a>程序设计(c语言)</h2><h3 id="课本-1"><a href="#课本-1" class="headerlink" title="课本"></a>课本</h3><p>程序设计基础（c/c++）</p>
-<h3 id="软件-code-block"><a href="#软件-code-block" class="headerlink" title="软件 code:block"></a>软件 code:block</h3><h2 id="工程制图与计算机绘图基础"><a href="#工程制图与计算机绘图基础" class="headerlink" title="工程制图与计算机绘图基础"></a>工程制图与计算机绘图基础</h2><h3 id="课本-2"><a href="#课本-2" class="headerlink" title="课本"></a>课本</h3><p>工程绘图基础<br>2016autocad绘图</p>
-<h3 id="习题答案"><a href="#习题答案" class="headerlink" title="习题答案"></a>习题答案</h3><h3 id="软件-autocad"><a href="#软件-autocad" class="headerlink" title="软件 autocad"></a>软件 autocad</h3><h2 id="大学英语"><a href="#大学英语" class="headerlink" title="大学英语"></a>大学英语</h2><h3 id="A级课本"><a href="#A级课本" class="headerlink" title="A级课本"></a>A级课本</h3><h3 id="B级课本"><a href="#B级课本" class="headerlink" title="B级课本"></a>B级课本</h3><h3 id="C级课本"><a href="#C级课本" class="headerlink" title="C级课本"></a>C级课本</h3><h3 id="D级课本"><a href="#D级课本" class="headerlink" title="D级课本"></a>D级课本</h3><h2 id="军事理论"><a href="#军事理论" class="headerlink" title="军事理论"></a>军事理论</h2><p>军事理论题库</p>
-<h2 id="计算机选修模板"><a href="#计算机选修模板" class="headerlink" title="计算机选修模板"></a>计算机选修模板</h2><h3 id="数据分析与智能计算"><a href="#数据分析与智能计算" class="headerlink" title="数据分析与智能计算"></a>数据分析与智能计算</h3><p>课本<br>历年试卷</p>
-<h3 id="微信小程序开发"><a href="#微信小程序开发" class="headerlink" title="微信小程序开发"></a>微信小程序开发</h3><p>课本<br>历年试卷</p>
-<h2 id="大学物理"><a href="#大学物理" class="headerlink" title="大学物理"></a>大学物理</h2><h3 id="课本-3"><a href="#课本-3" class="headerlink" title="课本"></a>课本</h3><p>大学物理学（上海大学出版社）<br>大学物理学习指导</p>
-<h3 id="历年试卷-1"><a href="#历年试卷-1" class="headerlink" title="历年试卷"></a>历年试卷</h3><p>秋季期末历年试卷<br>冬季期末历年试卷<br>春季期末历年试卷</p>
-<h2 id="大学物理实验"><a href="#大学物理实验" class="headerlink" title="大学物理实验"></a>大学物理实验</h2><h3 id="课本-4"><a href="#课本-4" class="headerlink" title="课本"></a>课本</h3><p>大学物理实验</p>
-<h3 id="选实验网址"><a href="#选实验网址" class="headerlink" title="选实验网址"></a>选实验网址</h3><h2 id="线性代数"><a href="#线性代数" class="headerlink" title="线性代数"></a>线性代数</h2><h3 id="课本-5"><a href="#课本-5" class="headerlink" title="课本"></a>课本</h3><p>线性代数（上海大学出版社）<br>线性代数学习辅导（上海大学出版社）</p>
-<h2 id="大学化学"><a href="#大学化学" class="headerlink" title="大学化学"></a>大学化学</h2><h3 id="大学化学课本"><a href="#大学化学课本" class="headerlink" title="大学化学课本"></a>大学化学课本</h3><h2 id="大学化学实验"><a href="#大学化学实验" class="headerlink" title="大学化学实验"></a>大学化学实验</h2><h3 id="大学化学实验-1"><a href="#大学化学实验-1" class="headerlink" title="大学化学实验"></a>大学化学实验</h3>
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-    <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/%E5%AF%BC%E7%94%9F%E5%B7%A5%E4%BD%9C/">导生工作</a>
-    </div>
-
-
-      
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%AD%A6%E7%A7%91%E8%B5%84%E6%96%99/" rel="tag">学科资料</a></li></ul>
-    </div>
-
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-C++核心编程" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-C++核心编程" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
       <a  href="/2021/07/04/C++%E6%A0%B8%E5%BF%83%E7%BC%96%E7%A8%8B/" class="article-date">
@@ -334,13 +184,28 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a  class="article-title" href="/2021/07/04/C++%E6%A0%B8%E5%BF%83%E7%BC%96%E7%A8%8B/">C++核心编程</a>
+    <h1 class="article-title" itemprop="name">
+      C++核心编程
     </h1>
   
 
 
       </header>
+      
+      <div class="article-info article-info-post">
+        
+    <div class="article-category tagcloud">
+    <a class="article-category-link" href="/categories/%E7%BC%96%E7%A8%8B%E7%B1%BB/">编程类</a>
+    </div>
+
+
+        
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C-%E5%AD%A6%E4%B9%A0/" rel="tag">C++学习</a></li></ul>
+    </div>
+
+        <div class="clearfix"></div>
+      </div>
       
     
     <div class="article-entry" itemprop="articleBody">
@@ -1373,39 +1238,145 @@ return 0;
       
     </div>
     
-    <div class="article-info article-info-index">
-      
-      
-    <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/%E7%BC%96%E7%A8%8B%E7%B1%BB/">编程类</a>
-    </div>
-
-
-      
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C-%E5%AD%A6%E4%B9%A0/" rel="tag">C++学习</a></li></ul>
-    </div>
-
-      
-      <div class="clearfix"></div>
-    </div>
-    
   </div>
+  
+    
+    <div class="copyright">
+        <p><span>本文标题:</span><a  href="/2021/07/04/C++%E6%A0%B8%E5%BF%83%E7%BC%96%E7%A8%8B/">C++核心编程</a></p>
+        <p><span>文章作者:</span><a  href="/" title="访问  的个人博客"></a></p>
+        <p><span>发布时间:</span>2021年07月04日 - 23时45分</p>
+        <p><span>最后更新:</span>2021年07月29日 - 16时23分</p>
+        <p>
+            <span>原始链接:</span><a class="post-url" href="/2021/07/04/C++%E6%A0%B8%E5%BF%83%E7%BC%96%E7%A8%8B/" title="C++核心编程">http://watermaster-911.github.io/2021/07/04/C++%E6%A0%B8%E5%BF%83%E7%BC%96%E7%A8%8B/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://watermaster-911.github.io/2021/07/04/C++%E6%A0%B8%E5%BF%83%E7%BC%96%E7%A8%8B/　　作者: " title=""></span>
+        </p>
+        <p>
+            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license noopener" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/3.0/cn/" title="中国大陆 (CC BY-NC-SA 3.0 CN)" target = "_blank">"署名-非商用-相同方式共享 3.0"</a> 转载请保留原文链接及作者。
+        </p>
+    </div>
+
+
+
+<nav id="article-nav">
+  
+    <a  href="/2021/07/29/%E5%A4%A7%E4%B8%80%E5%B9%B4%E7%BA%A7%E8%B5%84%E6%96%99%E6%95%B4%E7%90%86/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption"><</strong>
+      <div class="article-nav-title">
+        
+          大一学科资料整理
+        
+      </div>
+    </a>
+  
+  
+</nav>
+
+
   
 </article>
 
+    <div id="toc" class="toc-article">
+    <strong class="toc-title">文章目录</strong>
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E5%86%85%E5%AD%98%E5%88%86%E5%8C%BA%E6%A8%A1%E5%9E%8B"><span class="toc-number">1.</span> <span class="toc-text">1 内存分区模型</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-1-%E7%A8%8B%E5%BA%8F%E8%BF%90%E8%A1%8C%E5%89%8D"><span class="toc-number">1.1.</span> <span class="toc-text">1.1 程序运行前</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2-%E7%A8%8B%E5%BA%8F%E8%BF%90%E8%A1%8C%E5%90%8E"><span class="toc-number">1.2.</span> <span class="toc-text">1.2 程序运行后</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-3-new%E6%93%8D%E4%BD%9C%E7%AC%A6"><span class="toc-number">1.3.</span> <span class="toc-text">1.3 new操作符</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E5%BC%95%E7%94%A8"><span class="toc-number">2.</span> <span class="toc-text">2 引用</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#2-1-%E5%BC%95%E7%94%A8%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8"><span class="toc-number">2.1.</span> <span class="toc-text">2.1 引用的基本使用</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-2-%E5%BC%95%E7%94%A8%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9"><span class="toc-number">2.2.</span> <span class="toc-text">2.2 引用注意事项</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-3-%E5%BC%95%E7%94%A8%E5%81%9A%E5%87%BD%E6%95%B0%E5%8F%82%E6%95%B0"><span class="toc-number">2.3.</span> <span class="toc-text">2.3 引用做函数参数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-4-%E5%BC%95%E7%94%A8%E5%81%9A%E5%87%BD%E6%95%B0%E8%BF%94%E5%9B%9E%E5%80%BC"><span class="toc-number">2.4.</span> <span class="toc-text">2.4 引用做函数返回值</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-5-%E5%BC%95%E7%94%A8%E7%9A%84%E6%9C%AC%E8%B4%A8"><span class="toc-number">2.5.</span> <span class="toc-text">2.5 引用的本质</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-6-%E5%B8%B8%E9%87%8F%E5%BC%95%E7%94%A8"><span class="toc-number">2.6.</span> <span class="toc-text">2.6 常量引用</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-%E5%87%BD%E6%95%B0%E6%8F%90%E9%AB%98"><span class="toc-number">3.</span> <span class="toc-text">3 函数提高</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#3-1-%E5%87%BD%E6%95%B0%E9%BB%98%E8%AE%A4%E5%8F%82%E6%95%B0"><span class="toc-number">3.1.</span> <span class="toc-text">3.1 函数默认参数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-3-%E5%87%BD%E6%95%B0%E9%87%8D%E8%BD%BD"><span class="toc-number">3.2.</span> <span class="toc-text">3.3 函数重载</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#3-3-1-%E5%87%BD%E6%95%B0%E9%87%8D%E8%BD%BD%E6%A6%82%E8%BF%B0"><span class="toc-number">3.2.1.</span> <span class="toc-text">3.3.1 函数重载概述</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-3-2-%E5%87%BD%E6%95%B0%E9%87%8D%E8%BD%BD%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9"><span class="toc-number">3.2.2.</span> <span class="toc-text">3.3.2 函数重载注意事项</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-%E7%B1%BB%E5%92%8C%E5%AF%B9%E8%B1%A1"><span class="toc-number">4.</span> <span class="toc-text">4 类和对象</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#4-1-%E5%B0%81%E8%A3%85"><span class="toc-number">4.1.</span> <span class="toc-text">4.1 封装</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#4-1-1-%E5%B0%81%E8%A3%85%E7%9A%84%E6%84%8F%E4%B9%89"><span class="toc-number">4.1.1.</span> <span class="toc-text">4.1.1  封装的意义</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-1-2-struct%E5%92%8Cclass%E5%8C%BA%E5%88%AB"><span class="toc-number">4.1.2.</span> <span class="toc-text">4.1.2 struct和class区别</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-1-3-%E6%88%90%E5%91%98%E5%B1%9E%E6%80%A7%E8%AE%BE%E7%BD%AE%E4%B8%BA%E7%A7%81%E6%9C%89"><span class="toc-number">4.1.3.</span> <span class="toc-text">4.1.3 成员属性设置为私有</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-2-%E5%AF%B9%E8%B1%A1%E7%9A%84%E5%88%9D%E5%A7%8B%E5%8C%96%E5%92%8C%E6%B8%85%E7%90%86"><span class="toc-number">4.2.</span> <span class="toc-text">4.2 对象的初始化和清理</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#4-2-1-%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0%E5%92%8C%E6%9E%90%E6%9E%84%E5%87%BD%E6%95%B0"><span class="toc-number">4.2.1.</span> <span class="toc-text">4.2.1 构造函数和析构函数</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-2-2-%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0%E7%9A%84%E5%88%86%E7%B1%BB%E5%8F%8A%E8%B0%83%E7%94%A8"><span class="toc-number">4.2.2.</span> <span class="toc-text">4.2.2 构造函数的分类及调用</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-2-3-%E6%8B%B7%E8%B4%9D%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0%E8%B0%83%E7%94%A8%E6%97%B6%E6%9C%BA"><span class="toc-number">4.2.3.</span> <span class="toc-text">4.2.3 拷贝构造函数调用时机</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-2-4-%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0%E8%B0%83%E7%94%A8%E8%A7%84%E5%88%99"><span class="toc-number">4.2.4.</span> <span class="toc-text">4.2.4 构造函数调用规则</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-2-5-%E6%B7%B1%E6%8B%B7%E8%B4%9D%E4%B8%8E%E6%B5%85%E6%8B%B7%E8%B4%9D"><span class="toc-number">4.2.5.</span> <span class="toc-text">4.2.5 深拷贝与浅拷贝</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-2-6-%E5%88%9D%E5%A7%8B%E5%8C%96%E5%88%97%E8%A1%A8"><span class="toc-number">4.2.6.</span> <span class="toc-text">4.2.6 初始化列表</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-2-7-%E7%B1%BB%E5%AF%B9%E8%B1%A1%E4%BD%9C%E4%B8%BA%E7%B1%BB%E6%88%90%E5%91%98"><span class="toc-number">4.2.7.</span> <span class="toc-text">4.2.7 类对象作为类成员</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-2-8-%E9%9D%99%E6%80%81%E6%88%90%E5%91%98"><span class="toc-number">4.2.8.</span> <span class="toc-text">4.2.8 静态成员</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-3-C-%E5%AF%B9%E8%B1%A1%E6%A8%A1%E5%9E%8B%E5%92%8Cthis%E6%8C%87%E9%92%88"><span class="toc-number">4.3.</span> <span class="toc-text">4.3 C++对象模型和this指针</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#4-3-1-%E6%88%90%E5%91%98%E5%8F%98%E9%87%8F%E5%92%8C%E6%88%90%E5%91%98%E5%87%BD%E6%95%B0%E5%88%86%E5%BC%80%E5%AD%98%E5%82%A8"><span class="toc-number">4.3.1.</span> <span class="toc-text">4.3.1 成员变量和成员函数分开存储</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-3-2-this%E6%8C%87%E9%92%88%E6%A6%82%E5%BF%B5"><span class="toc-number">4.3.2.</span> <span class="toc-text">4.3.2 this指针概念</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-3-3-%E7%A9%BA%E6%8C%87%E9%92%88%E8%AE%BF%E9%97%AE%E6%88%90%E5%91%98%E5%87%BD%E6%95%B0"><span class="toc-number">4.3.3.</span> <span class="toc-text">4.3.3 空指针访问成员函数</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-3-4-const%E4%BF%AE%E9%A5%B0%E6%88%90%E5%91%98%E5%87%BD%E6%95%B0"><span class="toc-number">4.3.4.</span> <span class="toc-text">4.3.4 const修饰成员函数</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-4-%E5%8F%8B%E5%85%83"><span class="toc-number">4.4.</span> <span class="toc-text">4.4 友元</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#4-4-1-%E5%85%A8%E5%B1%80%E5%87%BD%E6%95%B0%E5%81%9A%E5%8F%8B%E5%85%83"><span class="toc-number">4.4.1.</span> <span class="toc-text">4.4.1 全局函数做友元</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-4-2-%E7%B1%BB%E5%81%9A%E5%8F%8B%E5%85%83"><span class="toc-number">4.4.2.</span> <span class="toc-text">4.4.2 类做友元</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-4-3-%E6%88%90%E5%91%98%E5%87%BD%E6%95%B0%E5%81%9A%E5%8F%8B%E5%85%83"><span class="toc-number">4.4.3.</span> <span class="toc-text">4.4.3 成员函数做友元</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-5-%E8%BF%90%E7%AE%97%E7%AC%A6%E9%87%8D%E8%BD%BD"><span class="toc-number">4.5.</span> <span class="toc-text">4.5 运算符重载</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#4-5-1-%E5%8A%A0%E5%8F%B7%E8%BF%90%E7%AE%97%E7%AC%A6%E9%87%8D%E8%BD%BD"><span class="toc-number">4.5.1.</span> <span class="toc-text">4.5.1 加号运算符重载</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-5-2-%E5%B7%A6%E7%A7%BB%E8%BF%90%E7%AE%97%E7%AC%A6%E9%87%8D%E8%BD%BD"><span class="toc-number">4.5.2.</span> <span class="toc-text">4.5.2 左移运算符重载</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-5-3-%E9%80%92%E5%A2%9E%E8%BF%90%E7%AE%97%E7%AC%A6%E9%87%8D%E8%BD%BD"><span class="toc-number">4.5.3.</span> <span class="toc-text">4.5.3 递增运算符重载</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-5-4-%E8%B5%8B%E5%80%BC%E8%BF%90%E7%AE%97%E7%AC%A6%E9%87%8D%E8%BD%BD"><span class="toc-number">4.5.4.</span> <span class="toc-text">4.5.4 赋值运算符重载</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-5-5-%E5%85%B3%E7%B3%BB%E8%BF%90%E7%AE%97%E7%AC%A6%E9%87%8D%E8%BD%BD"><span class="toc-number">4.5.5.</span> <span class="toc-text">4.5.5 关系运算符重载</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-5-6-%E5%87%BD%E6%95%B0%E8%B0%83%E7%94%A8%E8%BF%90%E7%AE%97%E7%AC%A6%E9%87%8D%E8%BD%BD"><span class="toc-number">4.5.6.</span> <span class="toc-text">4.5.6 函数调用运算符重载</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-6-%E7%BB%A7%E6%89%BF"><span class="toc-number">4.6.</span> <span class="toc-text">4.6  继承</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#4-6-1-%E7%BB%A7%E6%89%BF%E7%9A%84%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95"><span class="toc-number">4.6.1.</span> <span class="toc-text">4.6.1 继承的基本语法</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-6-2-%E7%BB%A7%E6%89%BF%E6%96%B9%E5%BC%8F"><span class="toc-number">4.6.2.</span> <span class="toc-text">4.6.2 继承方式</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-6-3-%E7%BB%A7%E6%89%BF%E4%B8%AD%E7%9A%84%E5%AF%B9%E8%B1%A1%E6%A8%A1%E5%9E%8B"><span class="toc-number">4.6.3.</span> <span class="toc-text">4.6.3 继承中的对象模型</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-6-4-%E7%BB%A7%E6%89%BF%E4%B8%AD%E6%9E%84%E9%80%A0%E5%92%8C%E6%9E%90%E6%9E%84%E9%A1%BA%E5%BA%8F"><span class="toc-number">4.6.4.</span> <span class="toc-text">4.6.4 继承中构造和析构顺序</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-6-5-%E7%BB%A7%E6%89%BF%E5%90%8C%E5%90%8D%E6%88%90%E5%91%98%E5%A4%84%E7%90%86%E6%96%B9%E5%BC%8F"><span class="toc-number">4.6.5.</span> <span class="toc-text">4.6.5 继承同名成员处理方式</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-6-6-%E7%BB%A7%E6%89%BF%E5%90%8C%E5%90%8D%E9%9D%99%E6%80%81%E6%88%90%E5%91%98%E5%A4%84%E7%90%86%E6%96%B9%E5%BC%8F"><span class="toc-number">4.6.6.</span> <span class="toc-text">4.6.6 继承同名静态成员处理方式</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-6-7-%E5%A4%9A%E7%BB%A7%E6%89%BF%E8%AF%AD%E6%B3%95"><span class="toc-number">4.6.7.</span> <span class="toc-text">4.6.7 多继承语法</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-6-8-%E8%8F%B1%E5%BD%A2%E7%BB%A7%E6%89%BF"><span class="toc-number">4.6.8.</span> <span class="toc-text">4.6.8 菱形继承</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-7-%E5%A4%9A%E6%80%81"><span class="toc-number">4.7.</span> <span class="toc-text">4.7  多态</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#4-7-1-%E5%A4%9A%E6%80%81%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5"><span class="toc-number">4.7.1.</span> <span class="toc-text">4.7.1 多态的基本概念</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-7-2-%E5%A4%9A%E6%80%81%E6%A1%88%E4%BE%8B%E4%B8%80-%E8%AE%A1%E7%AE%97%E5%99%A8%E7%B1%BB"><span class="toc-number">4.7.2.</span> <span class="toc-text">4.7.2 多态案例一-计算器类</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-7-3-%E7%BA%AF%E8%99%9A%E5%87%BD%E6%95%B0%E5%92%8C%E6%8A%BD%E8%B1%A1%E7%B1%BB"><span class="toc-number">4.7.3.</span> <span class="toc-text">4.7.3 纯虚函数和抽象类</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-7-4-%E5%A4%9A%E6%80%81%E6%A1%88%E4%BE%8B%E4%BA%8C-%E5%88%B6%E4%BD%9C%E9%A5%AE%E5%93%81"><span class="toc-number">4.7.4.</span> <span class="toc-text">4.7.4 多态案例二-制作饮品</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-7-5-%E8%99%9A%E6%9E%90%E6%9E%84%E5%92%8C%E7%BA%AF%E8%99%9A%E6%9E%90%E6%9E%84"><span class="toc-number">4.7.5.</span> <span class="toc-text">4.7.5 虚析构和纯虚析构</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-7-6-%E5%A4%9A%E6%80%81%E6%A1%88%E4%BE%8B%E4%B8%89-%E7%94%B5%E8%84%91%E7%BB%84%E8%A3%85"><span class="toc-number">4.7.6.</span> <span class="toc-text">4.7.6 多态案例三-电脑组装</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-%E6%96%87%E4%BB%B6%E6%93%8D%E4%BD%9C"><span class="toc-number">5.</span> <span class="toc-text">5 文件操作</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#5-1%E6%96%87%E6%9C%AC%E6%96%87%E4%BB%B6"><span class="toc-number">5.1.</span> <span class="toc-text">5.1文本文件</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#5-1-1%E5%86%99%E6%96%87%E4%BB%B6"><span class="toc-number">5.1.1.</span> <span class="toc-text">5.1.1写文件</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5-1-2%E8%AF%BB%E6%96%87%E4%BB%B6"><span class="toc-number">5.1.2.</span> <span class="toc-text">5.1.2读文件</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-2-%E4%BA%8C%E8%BF%9B%E5%88%B6%E6%96%87%E4%BB%B6"><span class="toc-number">5.2.</span> <span class="toc-text">5.2 二进制文件</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#5-2-1-%E5%86%99%E6%96%87%E4%BB%B6"><span class="toc-number">5.2.1.</span> <span class="toc-text">5.2.1 写文件</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5-2-2-%E8%AF%BB%E6%96%87%E4%BB%B6"><span class="toc-number">5.2.2.</span> <span class="toc-text">5.2.2 读文件</span></a></li></ol></li></ol></li></ol>
+</div>
+<style>
+    .left-col .switch-btn {
+        display: none;
+    }
+    .left-col .switch-area {
+        display: none;
+    }
+</style>
+<input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
+
+<script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+
+<script>
+    var valueHide = "隐藏目录";
+    var valueShow = "显示目录";
+    if ($(".left-col").is(":hidden")) {
+        $("#tocButton").attr("value", valueShow);
+    }
+    $("#tocButton").click(function() {
+        if ($("#toc").is(":hidden")) {
+            $("#tocButton").attr("value", valueHide);
+            $("#toc").slideDown(320);
+            $(".switch-btn, .switch-area").fadeOut(300);
+        }
+        else {
+            $("#tocButton").attr("value", valueShow);
+            $("#toc").slideUp(350);
+            $(".switch-btn, .switch-area").fadeIn(500);
+        }
+    })
+    if ($(".toc").length < 1) {
+        $("#toc, #tocButton").hide();
+        $(".switch-btn, .switch-area").show();
+    }
+</script>
 
 
 
 
 
 
+    
+        <section class="changyan" id="comments">
+  <!--<div id="uyan_frame"></div>-->
+  <div id="SOHUCS"></div>
+  <script charset="utf-8" type="text/javascript" src="https://changyan.sohu.com/upload/changyan.js"></script>
+  <script type="text/javascript">
+    window.changyan.api.config({
+      appid: 'xxxx',
+      conf: 'xxxxxxxxx'
+    });
+  </script>
+</section>
+    
+
+
+
+    <div class="scroll" id="post-nav-button">
+        
+            <a  href="/2021/07/29/%E5%A4%A7%E4%B8%80%E5%B9%B4%E7%BA%A7%E8%B5%84%E6%96%99%E6%95%B4%E7%90%86/" title="上一篇: 大一学科资料整理">
+                <i class="fa fa-angle-left"></i>
+            </a>
+        
+        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+        
+            <a  href="/" title="回到主页"><i class="fa fa-home"></i></a>
+        
+    </div>
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2021/07/29/%E4%B8%8A%E6%B5%B7%E5%A4%A7%E5%AD%A6%E5%B8%B8%E7%94%A8%E7%BD%91%E5%9D%80/">SHU常用网址及功能描述</a></li><li class="post-list-item"><a class="post-list-link" href="/2021/07/29/%E5%A4%A7%E4%B8%80%E5%B9%B4%E7%BA%A7%E8%B5%84%E6%96%99%E6%95%B4%E7%90%86/">大一学科资料整理</a></li><li class="post-list-item"><a class="post-list-link" href="/2021/07/04/C++%E6%A0%B8%E5%BF%83%E7%BC%96%E7%A8%8B/">C++核心编程</a></li></ul>
+    
+<script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+
+    <script>
+        $(".post-list").addClass("toc-article");
+        // $(".post-list-item a").attr("target","_blank");
+        $("#post-nav-button > a:nth-child(2)").click(function() {
+            $(".fa-bars, .fa-times").toggle();
+            $(".post-list").toggle(300);
+            if ($(".toc").length > 0) {
+                $("#toc, #tocButton").toggle(200, function() {
+                    if ($(".switch-area").is(":visible")) {
+                        $("#toc, .switch-btn, .switch-area").toggle();
+                        $("#tocButton").attr("value", valueHide);
+                        }
+                    })
+            }
+            else {
+                $(".switch-btn, .switch-area").fadeToggle(300);
+            }
+        })
+    </script>
 
 
 
 
-  
-  
+    <script>
+        
+    </script>
 
 </div>
       <footer id="footer">
