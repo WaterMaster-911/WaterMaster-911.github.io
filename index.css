@@ -127,6 +127,11 @@ color:#d983a6;
 }
 }
 
+.icon {
+    width: 20px;
+    height: 20px;
+  }
+
 .notion-button {
     display: inline-block;
     padding: 10px 20px;
