@@ -28,7 +28,7 @@ body {
 .panel {
     color: rgb(51, 51, 51);
     font-weight: 100;
-    background-color:antiquewhite;
+    /* background-color:#f5f5dc; */
 }
 
 .logo path {
@@ -47,12 +47,6 @@ body {
     margin-bottom: 1rem;
 }
 
-.bg-gradient-primary {
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-    border-bottom-right-radius: 8px;
-    border-bottom-left-radius: 8px;
-}
 
 .htmlpage-row {
     display: table;
